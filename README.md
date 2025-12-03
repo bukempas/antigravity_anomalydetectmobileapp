@@ -14,16 +14,35 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-Set your Google Cloud Project ID and Location (if not using default):
+Set your Google Cloud Project ID and Location. You can copy `.env.example` to `.env` and fill in the details:
+```bash
+cp .env.example .env
+# Edit .env with your details
+```
+Or export them directly:
 ```bash
 export GOOGLE_CLOUD_PROJECT="your-project-id"
 export GOOGLE_CLOUD_LOCATION="us-central1"
 ```
+
 Run the server:
 ```bash
 python main.py
 ```
 The server will start at `http://0.0.0.0:8080`.
+
+#### Using Docker
+Ensure you are in the `backend` directory:
+```bash
+cd backend
+```
+
+You can also run the backend using Docker:
+
+```bash
+docker build -t abu-dhabi-agent-backend .
+docker run -p 8080:8080 -e GOOGLE_CLOUD_PROJECT="your-project-id" -e GOOGLE_CLOUD_LOCATION="us-central1" abu-dhabi-agent-backend
+```
 ### 2. Mobile App (Flutter)
 Navigate to the `mobile_app` directory:
 ```bash

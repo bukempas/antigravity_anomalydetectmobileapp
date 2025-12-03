@@ -1,6 +1,10 @@
 import os
+from dotenv import load_dotenv
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+
+load_dotenv()
+
 import vertexai
 from vertexai.generative_models import GenerativeModel, ChatSession, Part, Tool
 import vertexai.preview.generative_models as generative_models
