@@ -1,7 +1,7 @@
 # Agentic Mobile App (Flutter + Python ADK)
 This project demonstrates a mobile app that uses a Python backend powered by Google's Agent Development Kit (ADK) / Vertex AI to answer questions about Abu Dhabi and GovAI.
 
-"Google Cloud credits are provided for this project." #AISprint
+"Google Cloud credits are provided for this project." #AISprintH2
 
 ## Prerequisites
 - **Flutter SDK**: [Install Flutter](https://docs.flutter.dev/get-started/install)
